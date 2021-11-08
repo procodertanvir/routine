@@ -7,16 +7,19 @@
       body{
         font-family: sans-serif;
       }
-      h1{
-        text-align: center;
+      caption{
         text-decoration: underline;
         color: purple;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 10px;
       }
       table{
         border: 3px solid green;
         width: 100%;
         text-align: center;
         height: 300px;
+        margin: 50px 0;
       }
       th{
         font-size: 20px;
@@ -37,6 +40,29 @@
         font-family: cursive;
       }
       
+      #exam{
+        border: none;
+      }
+      #exam th{
+        padding: 10px;
+      }
+      #exam td{
+        border-bottom: 5px solid pink;
+        padding: 8px;
+      }
+      #h1{    
+        animation: first 5s infinite alternate;
+}
+
+@keyframes first {
+  0%   {color:red;}
+  25%  {color: blue; margin-left: 100px;}
+  50%  {color: green; margin-left: 200px;}
+  75%  {color: aquamarine;}
+  100% {color: pink;}
+}
+      
+      
       
       @media screen and (max-width: 500px){
         th{
@@ -53,9 +79,56 @@
   </head>
   
   <body>
-    <h1>Science</h1>
+    
+    <h1 id="h1">eXaM......</h1>
+    
+    <table id="exam">
+      <caption>Exam Routine</caption>
+      <tr>
+        <th>তারিখ ও বার</th>
+        <th>বিষয় সমূহ</th>
+      </tr>
+      
+      <tr>
+        <td>১৪/১১/২০২১ <br> রবিবার</td>
+        <td>বাংলা (আবশ্যিক)</td>
+      </tr>
+      
+      <tr>
+        <td>১৫/১১/২০২১ <br> সোমবার</td>
+        <td>তথ্য ও যোগাযোগ প্রযুক্তি (আবশ্যিক)</td>
+      </tr>
+      
+      <tr>
+        <td>১৮/১১/২০২১ <br> বৃহস্পতিবার</td>
+        <td>ইংরেজি (আবশ্যিক)</td>
+      </tr>
+      
+      <tr>
+        <td>২১/১১/২০২১ <br> রবিবার</td>
+        <td>ইসলাম ইতিহাস ও সংস্কৃতি <br>হিসাব বিজ্ঞান <br> পদার্থ বিজ্ঞান</td>
+      </tr>
+      
+      <tr>
+        <td>২৩/১১/২০২১ <br> মঙ্গলবার</td>
+        <td>পৌরনীতি ও সুশাসন <br> রসায়ন বিজ্ঞান <br> ব্যবসায় সংগঠন ও ব্যবস্থাপনা</td>
+      </tr>
+      
+      <tr>
+        <td>২৫/১১/২০২১ <br> বৃহস্পতিবার</td>
+        <td>যুক্তিবিদ্যা <br> জীববিজ্ঞান <br> ফিন্যান্স, ব্যাংকিং ও বিমা</td>
+      </tr>
+      
+      <tr>
+        <td class="last">২৭/১১/২০২১ <br> শনিবার</td>
+        <td class="last">অর্থনীতি (ব্যবসায় শিক্ষা ও মানবিক) <br> উচ্চতর গণিত</td>
+      </tr>
+    </table>
+    
+    
     
     <table>
+      <caption>Science</caption>
       <tr>
         <th>DAY</th>
         <th>1st Period</th>
@@ -102,9 +175,9 @@
     </table>
     
 <!--  Business Section 1 Routine: Kaisar    -->
-    <h1>Business: 01</h1>
     
     <table>
+      <caption>Business: 01</caption>
       <tr>
         <th>DAY</th>
         <th>1st Period</th>
@@ -152,9 +225,9 @@
     
     
     <!--  Business Section 2 Routine: Mijan    -->
-    <h1>Business: 02</h1>
     
     <table>
+      <caption>Business: 02</caption>
       <tr>
         <th>DAY</th>
         <th>1st Period</th>
